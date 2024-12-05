@@ -204,7 +204,9 @@ func resourceCloudflareRecordRead(ctx context.Context, d *schema.ResourceData, m
 	client := meta.(*cloudflare.API)
 	zoneID := d.Get(consts.ZoneIDSchemaKey).(string)
 
-	record, err := client.GetDNSRecord(ctx, cloudflare.ZoneIdentifier(zoneID), d.Id())
+	// [PG] Use the customized function to get DNS record
+	record, err := pgGetDNSRecord(client, ctx, cloudflare.ZoneIdentifier(zoneID), d.Id())
+	// record, err := client.GetDNSRecord(ctx, cloudflare.ZoneIdentifier(zoneID), d.Id())
 	if err != nil {
 		var notFoundError *cloudflare.NotFoundError
 		if errors.As(err, &notFoundError) {
