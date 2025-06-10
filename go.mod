@@ -1,8 +1,8 @@
 module github.com/cloudflare/terraform-provider-cloudflare
 
-go 1.21
+go 1.23.0
 
-
+toolchain go1.23.10
 
 require (
 	github.com/agext/levenshtein v1.2.3 // indirect
