@@ -14,7 +14,7 @@ require (
 	github.com/ramya-rao-a/go-outline v0.0.0-20210608161538-9736a4bde949
 	github.com/rogpeppe/godef v1.1.2
 	github.com/stamblerre/gocode v1.0.0
-	golang.org/x/oauth2 v0.13.0
+	golang.org/x/oauth2 v0.27.0
 	golang.org/x/tools/gopls v0.13.2
 )
 
