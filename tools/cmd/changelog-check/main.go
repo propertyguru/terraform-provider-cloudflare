@@ -15,7 +15,7 @@ import (
 
 const (
 	changelogEntryFileFormat      = ".changelog/%d.txt"
-	changelogProcessDocumentation = "https://github.com/cloudflare/terraform-provider-cloudflare/blob/master/contributing/changelog-process.md"
+	changelogProcessDocumentation = "https://github.com/propertyguru/terraform-provider-cloudflare/blob/master/contributing/changelog-process.md"
 	changelogDetectedMessage      = "changelog detected :white_check_mark:"
 )
 
