@@ -1,4 +1,4 @@
-module github.com/cloudflare/terraform-provider-cloudflare
+module github.com/propertyguru/terraform-provider-cloudflare
 
 go 1.23.3
 
