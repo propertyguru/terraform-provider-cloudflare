@@ -15,7 +15,7 @@ import (
 
 const (
 	changelogEntryFileFormat      = ".changelog/%d.txt"
-	changelogProcessDocumentation = "https://github.com/cloudflare/terraform-provider-cloudflare/blob/master/contributing/changelog-process.md"
+	changelogProcessDocumentation = "https://github.com/propertyguru/terraform-provider-cloudflare/blob/master/contributing/changelog-process.md"
 	changelogDetectedMessage      = "changelog detected :white_check_mark:"
 )
 
@@ -42,6 +42,8 @@ func main() {
 	owner := os.Getenv("GITHUB_OWNER")
 	repo := os.Getenv("GITHUB_REPO")
 	token := os.Getenv("GITHUB_TOKEN")
+
+	fmt.Println("GITHUB_OWNER based on env variable:", owner)
 
 	if owner == "" {
 		log.Fatalf("GITHUB_OWNER not set")
