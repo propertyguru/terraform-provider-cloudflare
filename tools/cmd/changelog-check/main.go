@@ -43,6 +43,8 @@ func main() {
 	repo := os.Getenv("GITHUB_REPO")
 	token := os.Getenv("GITHUB_TOKEN")
 
+	fmt.Println("GITHUB_OWNER based on env variable:", owner)
+
 	if owner == "" {
 		log.Fatalf("GITHUB_OWNER not set")
 	}
