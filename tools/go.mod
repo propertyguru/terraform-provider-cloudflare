@@ -14,7 +14,7 @@ require (
 	github.com/ramya-rao-a/go-outline v0.0.0-20210608161538-9736a4bde949
 	github.com/rogpeppe/godef v1.1.2
 	github.com/stamblerre/gocode v1.0.0
-	golang.org/x/oauth2 v0.13.0
+	golang.org/x/oauth2 v0.27.0
 	golang.org/x/tools/gopls v0.13.2
 )
 
@@ -249,7 +249,6 @@ require (
 	golang.org/x/time v0.3.0 // indirect
 	golang.org/x/tools v0.14.0 // indirect
 	golang.org/x/vuln v0.0.0-20230110180137-6ad3e3d07815 // indirect
-	google.golang.org/appengine v1.6.8 // indirect
 	google.golang.org/protobuf v1.33.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
